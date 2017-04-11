@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ahem Font for Tests</title>
+    <style type="text/css" media="screen">
+        @font-face {
+          font-family: Ahem;
+          src: url('https://raw.githubusercontent.com/Hydrock/AhemFont/master/font/ahem.eot'); /* IE9 Compat Modes */
+          src: url('https://raw.githubusercontent.com/Hydrock/AhemFont/master/font/ahem.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+               url('https://raw.githubusercontent.com/Hydrock/AhemFont/master/font/ahem.woff2') format('woff2'), /* Super Modern Browsers */
+               url('https://raw.githubusercontent.com/Hydrock/AhemFont/master/font/ahem.woff') format('woff'), /* Pretty Modern Browsers */
+               url('https://raw.githubusercontent.com/Hydrock/AhemFont/master/font/ahem.ttf')  format('truetype'), /* Safari, Android, iOS */
+               url('https://raw.githubusercontent.com/Hydrock/AhemFont/master/font/ahem.svg#svgAhem') format('svg'); /* Legacy iOS */
+        }
+        .ahem {
+          font-family: Ahem, sans-serif;
+          border: 1px aqua solid;
+        }
+        .fz100 {
+            font-size: 100px;
+        }
+        .cr {
+            color: red;
+        }
+        .cg {
+            color: green;
+        }
+        .description {
+            margin-left: 30px;
+        }
+        p {
+            border-bottom: 1px solid black;
+        }
+        p * {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    Most characters are equilateral squares. The codepoints which are mapped to something else are the following:
+    <p>
+        <span class="ahem fz100 cg"> </span>
+        <span class="description">" " (U+20): No path but full advance</span>
+    </p>
+    <p>
+        <span class="ahem fz100 cg">p</span>
+        <span class="description">"p" (U+70): Path has 0 ascent but full descent</span>
+    </p>
+    <p>
+        <span class="ahem fz100 cg">É</span>
+        <span class="description">"É" (U+C9): Path has 0 descent but full ascent</span>
+    </p>
+    <p>
+        <span class="ahem fz100 cg">横</span>
+        <span class="description">"横" (U+6A2A): Thin horizontal stripe and full advance</span>
+    </p>
+    <p>
+        <span class="ahem fz100 cg">橫</span>
+        <span class="description">"橫" (U+6A6B): Thin horizontal stripe and full advance;</span>
+    </p>
+    <p>
+        <span class="ahem fz100 cg">縦</span>
+        <span class="description">"縦" (U+7E26): Thin vertical stripe and full advance;</span>
+    </p>
+    <p>
+        <span class="ahem fz100 cg">縱</span>
+        <span class="description">"縱" (U+7E31): Thin vertical stripe and full advance;</span>
+    </p>
+    <p>
+        <span class="ahem fz100 cg">纵</span>
+        <span class="description">"纵" (U+7EB5): Thin vertical stripe and full advance.</span>
+    </p>
+</body>
+</html>
